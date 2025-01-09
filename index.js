@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { configDotenv } from 'dotenv';
 import Signup from './Schemas/SignupSchema.js'; // Ensure the path is correct
