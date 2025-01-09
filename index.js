@@ -33,6 +33,10 @@ const verifyToken = (req, res, next) => {
     }
 };
 
+app.get('/',(req,res)=>{
+    res.json("Deployed Successfully")
+})
+
 // Routes
 app.post('/api/signup', async (req, res) => {
     const { name, email, password } = req.body;
